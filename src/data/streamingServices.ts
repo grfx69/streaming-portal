@@ -1,0 +1,418 @@
+export interface StreamingService {
+  name: string;
+  href: string;
+  bgStyle: string;
+  textColor: string;
+  category: "streaming" | "live-tv" | "sports" | "news" | "utility" | "other";
+  imageUrl?: string;
+}
+
+export const streamingServices: StreamingService[] = [
+  // Row 1 - Premium Streaming
+  {
+    name: "Crave",
+    href: "https://www.crave.ca/",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "streaming",
+    imageUrl: "/logos/crave.gif",
+  },
+  {
+    name: "HBO Max",
+    href: "https://hbomax.com/",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "streaming",
+    imageUrl: "/logos/hbomax.gif",
+  },
+  {
+    name: "YouTube TV",
+    href: "https://youtube.tv",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "live-tv",
+    imageUrl: "/logos/youtubetv.jpg",
+  },
+  {
+    name: "Philo",
+    href: "https://www.philo.com/",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "live-tv",
+    imageUrl: "/logos/philo.gif",
+  },
+
+  // Row 2
+  {
+    name: "Hulu",
+    href: "https://www.hulu.com/",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "streaming",
+    imageUrl: "/logos/hulu.jpg",
+  },
+  {
+    name: "Pluto TV",
+    href: "https://pluto.tv",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "streaming",
+    imageUrl: "/logos/pluto.gif",
+  },
+  {
+    name: "Tubi",
+    href: "https://tubitv.com/",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "streaming",
+    imageUrl: "/logos/tubitv.gif",
+  },
+  {
+    name: "Xumo Play",
+    href: "https://play.xumo.com/",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "streaming",
+    imageUrl: "/logos/xumoplay.webp",
+  },
+
+  // Row 3
+  {
+    name: "NETFLIX",
+    href: "https://www.netflix.com",
+    bgStyle: "#000000",
+    textColor: "#e50914",
+    category: "streaming",
+    imageUrl: "/logos/netflix.jpg",
+  },
+  {
+    name: "ESPN",
+    href: "https://www.espn.com/watch/",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "sports",
+    imageUrl: "/logos/espn.gif",
+  },
+  {
+    name: "Twitch",
+    href: "https://www.twitch.tv/",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "streaming",
+    imageUrl: "/logos/twitch.gif",
+  },
+  {
+    name: "Paramount+",
+    href: "https://www.paramountplus.com/",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "streaming",
+    imageUrl: "/logos/paramount.gif",
+  },
+
+  // Row 4
+  {
+    name: "Fubo",
+    href: "https://www.fubo.tv/",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "live-tv",
+    imageUrl: "/logos/fubo.gif",
+  },
+  {
+    name: "YouTube",
+    href: "https://www.youtube.com/",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "streaming",
+    imageUrl: "/logos/youtube.jpg",
+  },
+  {
+    name: "Disney+",
+    href: "https://www.disneyplus.com",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "streaming",
+    imageUrl: "/logos/disney.jpg",
+  },
+  {
+    name: "Plex",
+    href: "https://app.plex.tv/",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "streaming",
+    imageUrl: "/logos/plex.gif",
+  },
+
+  // Row 5
+  {
+    name: "Prime Video",
+    href: "https://www.primevideo.com",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "streaming",
+    imageUrl: "/logos/Prime-video.webp",
+  },
+  {
+    name: "AMC+",
+    href: "https://www.amcplus.com/",
+    bgStyle: "#000000",
+    textColor: "#4ade80",
+    category: "streaming",
+    imageUrl: "/logos/AMC-logo.webp",
+  },
+  {
+    name: "MGM+",
+    href: "https://mgmplus.com",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "streaming",
+    imageUrl: "/logos/MGM_logo.webp",
+  },
+  {
+    name: "Crackle",
+    href: "https://crackle.com",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "streaming",
+    imageUrl: "/logos/Crackle-logo.webp",
+  },
+
+  // Row 6
+  {
+    name: "MLB.TV",
+    href: "https://mlb.tv",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "sports",
+    imageUrl: "/logos/mlb.jpeg",
+  },
+  {
+    name: "Emby",
+    href: "https://emby.media/",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "streaming",
+    imageUrl: "/logos/embylogo.png",
+  },
+  {
+    name: "Boomerang",
+    href: "https://www.boomerang.com/",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "streaming",
+    imageUrl: "/logos/Boomerang_2014_logo.webp",
+  },
+  {
+    name: "DistroTV",
+    href: "https://www.distro.tv/",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "streaming",
+    imageUrl: "/logos/distro-logo.png",
+  },
+
+  // Row 7
+  {
+    name: "STARZ",
+    href: "https://starz.com",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "streaming",
+    imageUrl: "/logos/Stars-logo.webp",
+  },
+  {
+    name: "discovery+",
+    href: "https://discoveryplus.com",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "streaming",
+    imageUrl: "/logos/Discovery-logo.webp",
+  },
+  {
+    name: "Sling TV",
+    href: "https://sling.com",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "live-tv",
+    imageUrl: "/logos/Sling-logo.webp",
+  },
+  {
+    name: "HISTORY",
+    href: "https://play.history.com/live",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "streaming",
+    imageUrl: "/logos/History-logo.webp",
+  },
+
+  // Row 8 - News
+  {
+    name: "FOX Sports",
+    href: "https://www.foxsports.com/live",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "sports",
+    imageUrl: "/logos/Fox-Sports-logo.webp",
+  },
+  {
+    name: "FOX News",
+    href: "https://www.foxnews.com/video",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "news",
+    imageUrl: "/logos/Fox-News-logo.webp",
+  },
+  {
+    name: "FOX Business",
+    href: "https://www.foxbusiness.com/video",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "news",
+    imageUrl: "/logos/Fox-Business-logo.webp",
+  },
+  {
+    name: "Bloomberg",
+    href: "https://bloomberg.com/live",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "news",
+    imageUrl: "/logos/Bloomberg-logo.webp",
+  },
+
+  // Row 9
+  {
+    name: "CBS News",
+    href: "https://cbsnews.com/streaming",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "news",
+    imageUrl: "/logos/CBS-News-logo.webp",
+  },
+  {
+    name: "CNN",
+    href: "https://www.cnn.com/videos/live",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "news",
+    imageUrl: "/logos/CNN-logo.webp",
+  },
+  {
+    name: "PBS",
+    href: "https://pbs.com/livestream",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "news",
+    imageUrl: "/logos/PBS-logo.webp",
+  },
+  {
+    name: "Court TV",
+    href: "https://www.courttv.com/",
+    bgStyle: "#000000",
+    textColor: "#fbbf24",
+    category: "news",
+    imageUrl: "/logos/Courttv-logo.webp",
+  },
+
+  // Row 10
+  {
+    name: "Crunchyroll",
+    href: "https://crunchyroll.com",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "streaming",
+    imageUrl: "/logos/Crunchyroll.webp",
+  },
+  {
+    name: "OnlyFans",
+    href: "https://onlyfans.com",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "other",
+    imageUrl: "/logos/OnlyFans_Logo.webp",
+  },
+  {
+    name: "CBS Sports",
+    href: "https://cbssports.com",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "sports",
+    imageUrl: "/logos/1024px-CBS_Sports_logo.svg.webp",
+  },
+  {
+    name: "ViX",
+    href: "https://vix.com",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "streaming",
+    imageUrl: "/logos/VIX_Logo.webp",
+  },
+
+  // Row 11 - Utility
+  {
+    name: "ABRP",
+    href: "https://abetterrouteplanner.com",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "utility",
+    imageUrl: "/logos/abrp.gif",
+  },
+  {
+    name: "Browser",
+    href: "#",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "utility",
+    imageUrl: "/logos/chromium.jpg",
+  },
+  {
+    name: "Tesla",
+    href: "https://tesla.com",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "utility",
+    imageUrl: "/logos/ct.webp",
+  },
+  {
+    name: "Google Maps",
+    href: "https://maps.google.com",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "utility",
+    imageUrl: "/logos/google_maps.gif",
+  },
+
+  // Row 12
+  {
+    name: "Teslarati",
+    href: "https://teslarati.com",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "utility",
+    imageUrl: "/logos/teslarati.gif",
+  },
+  {
+    name: "Facebook",
+    href: "https://facebook.com",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "utility",
+    imageUrl: "/logos/facebook.gif",
+  },
+  {
+    name: "PlugShare",
+    href: "https://plugshare.com",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "utility",
+    imageUrl: "/logos/plugshare.gif",
+  },
+  {
+    name: "Reddit",
+    href: "https://reddit.com",
+    bgStyle: "#000000",
+    textColor: "#ffffff",
+    category: "utility",
+    imageUrl: "/logos/reddit.jpg",
+  },
+];
