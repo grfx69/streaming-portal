@@ -15,9 +15,9 @@
 - [x] Add FOX News logo - all 48 services now have logos (Version 22)
 - [x] Update Next.js to 16.1.6 for security fix (Version 24)
 - [x] Deploy to production - https://same-h69pe3ucdem-latest.netlify.app
-
 - [x] Fix "Return to Top" button to scroll to page top (Version 29)
 - [x] Deploy updated app to production - https://teslastreaming.netlify.app
+- [x] Push project to GitHub - https://github.com/grfx69/streaming-portal
 
 ## Potential Future Enhancements
 - [ ] Add search/filter functionality
